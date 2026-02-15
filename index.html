@@ -1,199 +1,227 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vipin K | Accountant & Compliance Professional</title>
+<title>Vipin K | Professional Accountant</title>
 
-<!-- FONT AWESOME (STABLE FOR GITHUB PAGES) -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
     margin:0;
-    font-family:"Segoe UI", Arial, sans-serif;
-    background:#f5f7fa;
-    color:#222;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#333;
 }
-.container{
+
+/* HEADER */
+header{
+    background:#0f172a;
+    color:white;
+    padding:40px 20px;
+}
+
+/* HEADER LAYOUT */
+.header-content{
     max-width:1100px;
     margin:auto;
-    padding:25px;
-}
-header{
-    background:#0b2c5d;
-    color:#fff;
-    padding:55px 30px;
-    border-radius:8px;
-}
-.header-flex{
     display:flex;
-    flex-wrap:wrap;
-    gap:30px;
     align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
 }
-.profile-pic{
-    width:140px;
-    height:140px;
+
+/* PHOTO */
+.header-photo img{
+    width:160px;
+    height:160px;
     border-radius:50%;
     object-fit:cover;
-    border:4px solid #fff;
+    border:4px solid #ffffff;
 }
-header h1{
+
+/* TEXT */
+.header-text h1{
     margin:0;
     font-size:36px;
 }
-header h3{
-    margin:8px 0 12px;
-    font-weight:normal;
-    font-size:18px;
+.header-text p{
+    margin:8px 0;
+    font-size:17px;
+    color:#cbd5f5;
 }
-.header-info p{
-    margin:6px 0;
+
+/* RESUME BUTTON */
+.top-resume{
+    margin-top:15px;
+}
+.top-resume a{
+    display:inline-block;
+    background:#ffffff;
+    color:#000000;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
     font-size:14px;
 }
-.btn{
-    display:inline-block;
-    margin-top:18px;
-    padding:12px 26px;
-    background:#f4a100;
-    color:#000;
-    text-decoration:none;
-    border-radius:4px;
-    font-weight:600;
+.top-resume a:hover{
+    background:#e5e7eb;
 }
-.social-icons{
-    margin-top:12px;
+
+/* MAIN CONTENT */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
 }
-.social-icons a{
-    font-size:24px;
-    margin-right:18px;
-    color:#ffffff;
-    text-decoration:none;
-}
-.social-icons a.whatsapp{
-    color:#25D366;
-}
-section{
-    background:#fff;
-    margin-top:28px;
+.section{
+    background:white;
+    margin-top:25px;
     padding:30px;
     border-radius:8px;
 }
-section h2{
+.section h2{
     margin-top:0;
-    color:#0b2c5d;
-    font-size:22px;
+    color:#0f172a;
 }
-ul{
-    padding-left:20px;
-}
+
+/* SKILLS */
 .skills span{
     display:inline-block;
-    border:1px solid #d0d7e2;
-    padding:7px 14px;
+    background:#e2e8f0;
+    padding:8px 14px;
     margin:6px;
-    border-radius:4px;
+    border-radius:20px;
     font-size:14px;
 }
-.metrics{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-.metric-box{
-    background:#f9fafc;
-    border-left:4px solid #0b2c5d;
-    padding:15px;
-}
-.contact a{
-    color:#0b2c5d;
+
+/* ICONS */
+.icons a{
+    color:#0f172a;
+    font-size:26px;
+    margin-right:18px;
     text-decoration:none;
-    font-weight:600;
 }
+.icons a:hover{
+    color:#1e293b;
+}
+
+/* FOOTER */
 footer{
     text-align:center;
-    margin:30px 0;
+    margin:40px 0 20px;
+    color:#555;
     font-size:14px;
-    color:#666;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .header-content{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 </style>
 </head>
 
 <body>
-<div class="container">
 
 <header>
-<div class="header-flex">
-    <img src="vipin.jpg" alt="Vipin K" class="profile-pic">
+    <div class="header-content">
 
-    <div class="header-info">
-        <h1>Vipin K</h1>
-        <h3>Accountant | Financial Compliance & MIS Specialist</h3>
-
-        <p>📍 India | kerala </p>
-        <p>📧 vibink4563@gmail.com | 📞 +91 85898 65747</p>
-
-        <!-- SOCIAL ICONS (WORKING) -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/vipin-k-72b6211b8/" 
-               target="_blank" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            
-
-            <a class="whatsapp"
-               href="https://wa.me/918589865747"
-               target="_blank" aria-label="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+        <!-- PHOTO LEFT -->
+        <div class="header-photo">
+            <img src="vipin.jpg" alt="Vipin K Photo">
         </div>
 
-        <a href="vipin_resume.pdf" class="btn" download>
-            <i class="fa-solid fa-download"></i> Download Resume
-        </a>
+        <!-- TEXT RIGHT -->
+        <div class="header-text">
+            <h1>Vipin K</h1>
+            <p>Professional Accountant | GST & Compliance | Tally | MIS Reporting</p>
+            <p><i class="fa-solid fa-location-dot"></i> Kerala, India</p>
+
+            <div class="top-resume">
+                <a href="vipin_resume.pdf" download>
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+
     </div>
-</div>
 </header>
 
-<section>
-<h2>Professional Profile</h2>
-<p>
-Detail-oriented Accounting Professional with 5+ years of experience in corporate accounting,
-statutory compliance, MIS reporting, and financial controls. Proven ability to improve
-process efficiency, ensure regulatory compliance, and deliver accurate financial insights
-to support management decision-making.
-</p>
-</section>
+<div class="container">
 
-<section>
-<h2>Core Competencies</h2>
-<ul>
-    <li>End-to-End Financial Accounting & Bookkeeping</li>
-    <li>GST & TDS Compliance and Statutory Filings</li>
-    <li>Month-End Closing & Bank Reconciliation</li>
-    <li>MIS Reporting & Financial Analysis</li>
-    <li>Accounts Payable & Receivable Management</li>
-    <li>Internal Controls & Process Improvement</li>
-</ul>
-</section>
+    <!-- ABOUT ME -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a motivated and detail-oriented accounting professional with a strong foundation
+            in bookkeeping, GST compliance, and financial documentation. I enjoy maintaining
+            accurate financial records and working within structured accounting processes.
+        </p>
+        <p>
+            I am seeking an opportunity in a professional organization where I can contribute
+            to accounting operations, support audits, and continuously enhance my technical
+            and compliance skills.
+        </p>
+    </div>
 
-<section>
-<h2>Professional Impact</h2>
-<div class="metrics">
-    <div class="metric-box">
-        <strong>Payment Optimization</strong>
-        <p>Reduced payment delays by 18% through structured tracking and follow-up controls.</p>
+    <!-- WHY HIRE ME -->
+    <div class="section">
+        <h2>Why Hire Me</h2>
+        <ul>
+            <li>Strong understanding of accounting fundamentals and compliance requirements</li>
+            <li>Hands-on knowledge of GST returns, bookkeeping, and reconciliations</li>
+            <li>Proficient in Tally, MS Excel, and MIS reporting</li>
+            <li>Reliable, detail-focused, and adaptable to MNC environments</li>
+        </ul>
     </div>
-    <div class="metric-box">
-        <strong>Process Efficiency</strong>
-        <p>Cut manual follow-ups by 50% by streamlining accounting workflows.</p>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>Core Skills</h2>
+        <div class="skills">
+            <span>Tally</span>
+            <span>GST Compliance</span>
+            <span>Accounting Entries</span>
+            <span>Income Tax Basics</span>
+            <span>MS Excel</span>
+            <span>MIS Reporting</span>
+            <span>Bank Reconciliation</span>
+            <span>Financial Documentation</span>
+        </div>
     </div>
-    <div class="metric-box">
-        <strong>Working Capital</strong>
-        <p>Improved inventory turnover and cash flow visibility for management review.</p>
+
+    <!-- CONTACT -->
+    <div class="section">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> vibink4563@gmail.com</p>
+        <p><strong>Phone:</strong> +91 85898 65747</p>
+
+        <div class="icons">
+            <a href="mailto:vibink4563@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/918589865747" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vipin-k-72b6211b8/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
     </div>
-    <div class="metri
+
+</div>
+
+<footer>
+    © 2026 Vipin K | Accountant Portfolio
+</footer>
+
+</body>
+</html>
